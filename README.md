@@ -1,5 +1,7 @@
 # 🧠 NLP Query Engine
 
+**Author:** Utkarsh Kumar 
+
 ### Natural Language Interface for Dynamic Employee Databases  
 Connect any employee database, upload documents, and ask questions in plain English — no hard-coded schemas or SQL knowledge required.
 
