@@ -71,7 +71,7 @@ The system dynamically adapts to any schema and returns results from either data
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/nlp-query-engine.git
+git clone https://github.com/ukg1911/nlp-query-engine.git
 cd nlp-query-engine
 
 
