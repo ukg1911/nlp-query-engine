@@ -1,0 +1,12 @@
+embedding:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  batch_size: 32
+database:
+  sample_rows_limit: 5
+query_engine:
+  cache_ttl_seconds: 300
+  top_k_documents: 3
+data_paths:
+  faiss_index: "./backend/data/vector.index"
+  metadata_db: "./backend/data/text_db.sqlite"
+  schema_cache: "./backend/data/schema.json"

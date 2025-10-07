@@ -1,0 +1,21 @@
+Ignore Node.js dependencies
+node_modules/
+
+Ignore the build output directory
+dist/
+
+Ignore Vite's cache and development files
+.vite/
+
+Ignore local environment variables
+.env*
+
+Ignore git folder
+.git/
+
+Ignore IDE-specific files
+.vscode/
+.idea/
+
+Ignore system files
+.DS_Store

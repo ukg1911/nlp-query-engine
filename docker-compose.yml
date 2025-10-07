@@ -1,0 +1,39 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: nlp_frontend_app
+    ports:
+      - "8080:8080" # Assuming your frontend runs on 8080
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: nlp_backend_api
+    ports:
+      - "8000:8000" # Exposes the backend API to localhost:8000
+    environment:
+      # This connection string is used by the backend to talk to the db container
+      - DATABASE_URL=postgresql://user:password@db:5432/mydb
+      # Add your Google API key here
+      - GOOGLE_API_KEY=AIzaSyAMDbMJ2dav6GZlwoD2jYyKcxt-p2EC2xQ
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: nlp_postgres_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432" # Exposes the database to your host machine for tools like DBeaver
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+
+        
