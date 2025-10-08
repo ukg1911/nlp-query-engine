@@ -20,7 +20,7 @@ The system dynamically adapts to any schema and returns results from either data
 | Layer | Technology |
 |-------|-------------|
 | **Backend** | Python 3.13 · FastAPI · SQLAlchemy · asyncio |
-| **Frontend** | React (Vite) + Tailwind CSS + ShadCN UI |
+| **Frontend** | React (Vite) + Tailwind CSS + TypeScript |
 | **Database** | PostgreSQL (local demo uses SQLite) |
 | **NLP / Embeddings** | `sentence-transformers/all-MiniLM-L6-v2` |
 | **Caching & Performance** | LRU Cache · Connection Pooling · Async Queries |
